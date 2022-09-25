@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin response page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/8a99fbe217.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <section id="navMenu">
+        <div id="company">
+            <i class="fa fa-biohazard"></i>
+            <h2>Brand Name</h2>
+        </div>
+
+        <article id="buttons">
+            <button>
+                <div>
+                    <i class="fa fa-chart-line"></i>
+                </div>
+                <p>Resumo</p>
+            </button>
+            <button>
+                <div>
+                    <i class="fa fa-credit-card"></i>
+                </div>
+                <p>Vendas</p>
+            </button>
+            <button>
+                <div>
+                    <i class="fa fa-dollar-sign"></i>
+                </div>
+                <p>Recebíveis</p>
+            </button>
+        </article>     
+    </section>
+    
+    <section id="page">
+        <button id="toggleButton">
+            <i class="fa fa-bars" style="font-size: 30px;"></i>
+        </button>
+
+        <div id="title-holder">
+            <h1>Resumo</h1>
+        </div>
+        
+        <div id="contents">
+            <div id="small-content-grid">
+                <div class="card">
+                    <div class="upBar">
+                        <h2>Today Sells</h2>
+                        <i class="fa fa-eye"></i> <!-- <i class="fa-solid fa-eye-slash"></i> -->
+                    </div>
+                    <p class="contentValue">R$ 10.087,50</p>
+                </div>
+    
+                <div class="card">
+                    <div class="upBar">
+                        <h2>Today receives</h2>
+                        <i class="fa fa-eye"></i> <!-- <i class="fa-solid fa-eye-slash"></i> -->
+                    </div>
+                    <p class="contentValue">R$ 2.002,31</p>
+                </div>
+            </div>
+    
+            <div id="big-content-grid">
+                <div class="card">
+                    <div class="upBar">
+                        <h2>Week Sells</h2>
+                        <i class="fa fa-eye"></i> <!-- <i class="fa-solid fa-eye-slash"></i> -->
+                    </div>
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="index.js"></script>
+</html>
